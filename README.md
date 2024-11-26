@@ -1,5 +1,6 @@
 ## RetroNerd
 ### Integrantes: Arthur Quintino de Santana e Gustavo Greik Festa Orozimbo
+### Turma: 2°A MTEC DS
 
 
 ## Sumario da Wiki
