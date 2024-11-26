@@ -3,7 +3,7 @@
 ### Turma: 2°A MTEC DS
 
 
-## Sumario da Wiki
+## Sumário da Wiki
 
 [Objetivos Da Aplicação](https://github.com/ArthurQuintino/RetroNerd/wiki#objetivo-da-aplica%C3%A7%C3%A3o) <br>
 [Por que o nome RetroNerd?](https://github.com/ArthurQuintino/RetroNerd/wiki#por-que-o-nome-retronerd) <br>
