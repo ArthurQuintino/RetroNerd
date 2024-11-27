@@ -18,7 +18,7 @@ List<Noticias> noticias = [
     'Netflix anunciou o fechamento de seu principal estúdio de games após apenas dois anos de operação. A empresa afirmou que os resultados não atingiram as expectativas e decidiu redirecionar seus esforços para parcerias externas com desenvolvedores independentes. A decisão surpreendeu os fãs, especialmente porque projetos promissores foram cancelados, deixando uma lacuna no futuro da divisão de games da gigante do streaming.',
   ),
   Noticias(
-    '80% dos brasileiros são entusiastas de jogos eletrônico',
+    '80% dos brasileiros são entusiastas de jogos eletrônicos',
     'assets/images/brasil_gamers.jpg',
     'Uma pesquisa recente revelou que 80% dos brasileiros são entusiastas de jogos eletrônicos, colocando o Brasil no topo dos mercados mais engajados do mundo. Com a popularidade dos jogos mobile liderando a preferência nacional, a pesquisa destacou que a maioria dos jogadores está na faixa etária de 18 a 35 anos. Este dado reforça o potencial de crescimento do setor no país, apesar dos desafios locais.',
   ),
