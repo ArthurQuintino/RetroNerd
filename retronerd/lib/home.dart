@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:retronerd/noticias.dart';
+import 'package:retronerd/description.dart';
 
 void main() {
   runApp(const Home());
@@ -88,8 +89,16 @@ class _Home extends State<Home> {
                                       )
                                     ),
                                     child: ListTile(
+                                      onTap: () => Navigator.push(
+                                          context,
+                                          MaterialPageRoute(builder: (context) => const Description(),
+                                          settings: RouteSettings(
+                                            arguments: noticias[index]
+                                          ))
+                                      ),
                                         title: Text(
                                       noticias[index].Descricao,
+                                      
                                       style: GoogleFonts.rethinkSans(
                                           color: Colors.white, fontSize: 17),
                                     )));
