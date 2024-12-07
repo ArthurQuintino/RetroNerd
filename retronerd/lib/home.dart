@@ -22,12 +22,12 @@ class _Home extends State<Home> {
     double largura = MediaQuery.of(context).size.width;
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: Color(0xFF1C1C26),
+      backgroundColor: const Color(0xFF1C1C26),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
             children: <Widget>[
-              Gap(6),
+              const Gap(6),
               ImageSlideshow(
                 width: largura - 40,
                 height: 300,
@@ -42,9 +42,9 @@ class _Home extends State<Home> {
                   Image.asset('images/pngslide3.png', fit: BoxFit.contain)
                 ],
               ),
-              Gap(10),
+              const Gap(10),
               Padding(
-                padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                 child: Text(
                   'Bem Vindo ao maior acervo gamer retrô do Brasil!',
                   textAlign: TextAlign.center,
@@ -52,22 +52,22 @@ class _Home extends State<Home> {
                       color: Colors.white, fontSize: 20),
                 ),
               ),
-              Gap(20),
+              const Gap(20),
               Container(
                 width: largura - 40,
                 height: 500,
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                    color: Color(0xFF0D0D12),
+                    color: const Color(0xFF0D0D12),
                     borderRadius: BorderRadius.circular(20)),
                 child: Column(
                   children: <Widget>[
-                    Gap(13),
+                    const Gap(13),
                     Text('Principais Noticias',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.rethinkSans(
                             color: Colors.white, fontSize: 23)),
-                    Gap(10),
+                    const Gap(10),
                     SizedBox(
                       width: largura - 80,
                       height: 410,
@@ -83,7 +83,7 @@ class _Home extends State<Home> {
                                     color: Colors.transparent,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20),
-                                      side: BorderSide(
+                                      side: const BorderSide(
                                         color: Color(0xFF4DA6FF),
                                         width: 3
                                       )
@@ -107,7 +107,7 @@ class _Home extends State<Home> {
                   ],
                 ),
               ),
-              Gap(20),
+              const Gap(20),
             ],
           ),
         ),

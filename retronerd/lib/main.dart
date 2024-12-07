@@ -8,7 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatefulWidget {
@@ -25,11 +25,11 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
         home: Scaffold(
             bottomNavigationBar: PreferredSize(
-                preferredSize: Size.fromHeight(130),
+                preferredSize: const Size.fromHeight(130),
                 child: NavigationBarTheme(
                     data: NavigationBarThemeData(
-                        backgroundColor: Color(0xFF272736),
-                        indicatorColor: Color.fromARGB(0, 1, 1, 1),
+                        backgroundColor: const Color(0xFF272736),
+                        indicatorColor: const Color.fromARGB(0, 1, 1, 1),
                         labelTextStyle: WidgetStatePropertyAll(
                             GoogleFonts.rethinkSans(
                                 color: Colors.white, fontSize: 17))),
@@ -43,7 +43,7 @@ class _MainAppState extends State<MainApp> {
                       destinations: <Widget>[
                         NavigationDestination(
                           icon: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 15, 0, 3),
+                              padding: const EdgeInsets.fromLTRB(0, 15, 0, 3),
                               child: Image.asset(
                                 'images/controle.png',
                                 width: 60,
@@ -52,7 +52,7 @@ class _MainAppState extends State<MainApp> {
                         ),
                         NavigationDestination(
                             icon: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                              padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
                               child: Image.asset(
                                 'images/documento.png',
                                 width: 50,
@@ -61,7 +61,7 @@ class _MainAppState extends State<MainApp> {
                             label: "Artigo"),
                         NavigationDestination(
                           icon: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                              padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
                               child: Image.asset(
                                 'images/home.png',
                                 width: 50,
@@ -70,7 +70,7 @@ class _MainAppState extends State<MainApp> {
                         ),
                         NavigationDestination(
                           icon: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                            padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
                             child: Image.asset(
                               'images/tamagochi.png',
                               width: 45,
@@ -80,7 +80,7 @@ class _MainAppState extends State<MainApp> {
                         ),
                         NavigationDestination(
                           icon: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                            padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
                             child: Image.asset(
                               'images/evento.png',
                               width: 50,
@@ -91,9 +91,9 @@ class _MainAppState extends State<MainApp> {
                       ],
                     ))),
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(80),
+              preferredSize: const Size.fromHeight(80),
               child: AppBar(
-                title: Padding(
+                title: const Padding(
                   padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
                   child: Text('RetroNerd',
                       style: TextStyle(
@@ -101,12 +101,12 @@ class _MainAppState extends State<MainApp> {
                           fontSize: 30,
                           color: Color(0xFF4DA6FF))),
                 ),
-                backgroundColor: Color(0xFF272736),
+                backgroundColor: const Color(0xFF272736),
                 actions: <Widget>[
                   Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsets.fromLTRB(0, 20, 5, 0),
+                        padding: const EdgeInsets.fromLTRB(0, 20, 5, 0),
                         child: SizedBox(
                           width: 80,
                           height: 80,
@@ -125,6 +125,7 @@ class _MainAppState extends State<MainApp> {
               index: currentIndex,
               children: const <Widget>[
                 Home(),
+                ArtigosPage()
               ],
             )));
   }
