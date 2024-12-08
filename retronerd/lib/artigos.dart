@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:retronerd/artigosclass.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:retronerd/artigosdescription.dart';
 
 void artigosPage() {
   runApp(const ArtigosPage());
@@ -42,13 +43,13 @@ class ArtigosPage extends StatelessWidget {
                                     side: const BorderSide(
                                         color: Color(0xFF4DA6FF), width: 3)),
                                 child: ListTile(
-                                    // onTap: () => Navigator.push(
-                                    //  context,
-                                    // MaterialPageRoute(builder: (context) => const Description(),
-                                    // settings: RouteSettings(
-                                    //  arguments: noticias[index]
-                                    // ))
-                                    //),
+                                     onTap: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
+                                      settings: RouteSettings(
+                                      arguments: artigos[index]
+                                      ))
+                                      ),
                                     title: Text(
                                   artigos[index].nomeArtigo,
                                   style: GoogleFonts.rethinkSans(
@@ -80,15 +81,15 @@ class ArtigosPage extends StatelessWidget {
                                     side: const BorderSide(
                                         color: Color(0xFF4DA6FF), width: 3)),
                                 child: ListTile(
-                                    // onTap: () => Navigator.push(
-                                    //  context,
-                                    // MaterialPageRoute(builder: (context) => const Description(),
-                                    // settings: RouteSettings(
-                                    //  arguments: noticias[index]
-                                    // ))
-                                    //),
+                                     onTap: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
+                                      settings: RouteSettings(
+                                      arguments: teoria[index]
+                                      ))
+                                      ),
                                     title: Text(
-                                  teoria[index].nomeTeoria,
+                                  teoria[index].nomeArtigo,
                                   style: GoogleFonts.rethinkSans(
                                       color: Colors.white, fontSize: 17),
                                 )));
@@ -119,8 +120,15 @@ class ArtigosPage extends StatelessWidget {
                                     side: const BorderSide(
                                         color: Color(0xFF4DA6FF), width: 3)),
                                 child: ListTile(
+                                  onTap: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
+                                      settings: RouteSettings(
+                                      arguments: misterios[index]
+                                      ))
+                                      ),
                                   title: Text(
-                                    misterios[index].nomeMisterio,
+                                    misterios[index].nomeArtigo,
                                     style: GoogleFonts.rethinkSans(
                                         color: Colors.white, fontSize: 17),
                                   ),
@@ -135,9 +143,15 @@ class ArtigosPage extends StatelessWidget {
                                     side: const BorderSide(
                                         color: Color(0xFF4DA6FF), width: 3)),
                                 child: ListTile(
+                                  onTap: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
+                                      settings: RouteSettings(
+                                      arguments: easterEggs[index - misterios.length]
+                                      ))
+                                      ),
                                   title: Text(
-                                    easterEggs[index - misterios.length]
-                                        .nomeEasterEggs,
+                                    easterEggs[index - misterios.length].nomeArtigo,
                                     style: GoogleFonts.rethinkSans(
                                         color: Colors.white, fontSize: 17),
                                   ),
