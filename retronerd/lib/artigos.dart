@@ -26,7 +26,7 @@ class ArtigosPage extends StatelessWidget {
                         color: Colors.white, fontSize: 23)),
                 const Gap(10),
                 SizedBox(
-                  width: largura - 80,
+                  width: largura - 40,
                   height: 410,
                   child: Expanded(
                       child: ListView.builder(
@@ -64,7 +64,7 @@ class ArtigosPage extends StatelessWidget {
                         color: Colors.white, fontSize: 23)),
                 const Gap(10),
                 SizedBox(
-                  width: largura - 80,
+                  width: largura - 40,
                   height: 410,
                   child: Expanded(
                       child: ListView.builder(
@@ -102,7 +102,7 @@ class ArtigosPage extends StatelessWidget {
                         color: Colors.white, fontSize: 23)),
                 const Gap(10),
                 SizedBox(
-                  width: largura - 80,
+                  width: largura - 40,
                   height: 410,
                   child: Expanded(
                       child: ListView.builder(

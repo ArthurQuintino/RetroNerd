@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'home.dart';
 import 'artigos.dart';
 import 'eventos.dart';
-import 'jogos.dart';
+import 'jogosclass.dart';
 import 'tamagotchi.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:retronerd/eventos.dart';
 
 void main() {
   runApp(const MainApp());
@@ -123,9 +124,10 @@ class _MainAppState extends State<MainApp> {
             ),
             body: IndexedStack(
               index: currentIndex,
-              children: const <Widget>[
+              children:  <Widget>[
                 Home(),
-                ArtigosPage()
+                ArtigosPage(),
+                EventosPage(),
               ],
             )));
   }
