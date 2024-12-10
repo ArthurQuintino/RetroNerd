@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gap/gap.dart';
 import 'package:retronerd/eventosclass.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:latlong2/latlong.dart';
 
 void eventosPage() {
   runApp(EventosPage());
@@ -84,12 +87,53 @@ class EventosPage extends StatelessWidget {
               Gap(30),
               Text(
                 textAlign: TextAlign.justify,
-                "Localização",
-                style: GoogleFonts.rethinkSans(
-                    fontSize: 13),
+                "Localização dos Eventos",
+                style:
+                    GoogleFonts.rethinkSans(fontSize: 25, color: Colors.white),
               ),
-                            Gap(30),
-                            
+              Gap(30),
+              ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    width: largura - 40,
+                    height: 400,
+                    child: FlutterMap(
+                        options: MapOptions(
+                          initialCenter: LatLng(-23.533773,
+                              -46.625290), // localização de santos logintude e latitude
+                          initialZoom: 10,
+                        ),
+                        children: [
+                          TileLayer(
+                            urlTemplate:
+                                'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                            userAgentPackageName: 'com.example.app',
+                            maxNativeZoom: 19,
+                          ),
+                          MarkerLayer(markers: [
+                            for (int i = 0; i < eventosAtuais.length; i++)
+                              Marker(
+                                point: LatLng(
+                                    eventosAtuais[i].localizacao.latitude,
+                                    eventosAtuais[i].localizacao.longitude),
+                                width: 40,
+                                height: 40,
+                                child: Icon(Icons.location_on,
+                                    color: Colors.red, size: 40),
+                              ),
+                          ]),
+                          RichAttributionWidget(
+                            attributions: [
+                              TextSourceAttribution(
+                                'OpenStreetMap contributors',
+                                onTap: () => launchUrl(Uri.parse(
+                                    'https://openstreetmap.org/copyright')),
+                              ),
+                            ],
+                          ),
+                        ]),
+                  )),
+              Gap(30)
             ],
           ),
         ),
