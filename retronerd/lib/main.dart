@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:retronerd/jogos.dart';
 import 'home.dart';
 import 'artigos.dart';
 import 'eventos.dart';
@@ -128,6 +129,7 @@ class _MainAppState extends State<MainApp> {
                 Home(),
                 ArtigosPage(),
                 EventosPage(),
+                Jogospage(),
               ],
             )));
   }

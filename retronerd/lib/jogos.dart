@@ -29,13 +29,10 @@ class Jogospage extends StatelessWidget {
               Container(
                 width: largura - 40,
                 height: 300,
-                color: Color(0XFF0D0D12),
                 decoration: BoxDecoration(
+                color: Color(0XFF0D0D12),
                   borderRadius: BorderRadius.circular(20)
                 ),
-                child: ListView(
-                  
-                )
               )
             ],
           ),
