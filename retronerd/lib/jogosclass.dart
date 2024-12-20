@@ -514,8 +514,8 @@ List<Games> games = [
     "Nintendo DS"
   ),
   Games(
-    "Pokémon HeartGold/SoulSilver",
-    "Pokémon HeartGold e SoulSilver são remakes dos jogos clássicos Gold e Silver. Eles apresentam a região Johto, novas mecânicas e o sistema de Pokéwalker para interagir com o jogo de maneira física.",
+    "Pokémon HeartGold",
+    "Pokémon HeartGold são remakes dos jogos clássicos Gold e Silver. Eles apresentam a região Johto, novas mecânicas e o sistema de Pokéwalker para interagir com o jogo de maneira física.",
     "assets/images/pokemon_heartgold_soulsilver.png",
     "Estes jogos são considerados alguns dos melhores remakes da série Pokémon, com muito conteúdo e jogabilidade envolvente.",
     "Nintendo",
