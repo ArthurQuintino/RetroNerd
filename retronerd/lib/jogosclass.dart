@@ -546,8 +546,8 @@ List<Games> games = [
     "Nintendo DS"
   ),
   Games(
-    "Pokémon Black/White",
-    "Pokémon Black e White são os jogos da quinta geração de Pokémon, com novos Pokémon, uma nova região e mecânicas inovadoras, como a batalha em 3D.",
+    "Pokémon White",
+    "Pokémon White é um dos jogos da quinta geração de Pokémon, com novos Pokémon, uma nova região e mecânicas inovadoras, como a batalha em 3D.",
     "assets/images/pokemon_black_white.png",
     "Esses jogos foram uma grande evolução na série, com gráficos melhorados, novos Pokémon e uma história mais profunda.",
     "Nintendo",
@@ -675,7 +675,7 @@ List<Games> games = [
     "Nintendo 3DS"
   ),
   Games(
-    "Pokémon X/Y",
+    "Pokémon X",
     "Pokémon X e Y são os jogos da sexta geração da franquia Pokémon, introduzindo os gráficos 3D e a região de Kalos, com novos Pokémon e mecânicas como Mega Evoluções.",
     "assets/images/pokemon_x_y.png",
     "Esses jogos trouxeram gráficos em 3D e novas mecânicas, como as Mega Evoluções, que transformaram a série.",
@@ -707,7 +707,7 @@ List<Games> games = [
     "Nintendo 3DS"
   ),
   Games(
-    "Pokémon Omega Ruby/Alpha Sapphire",
+    "Pokémon Omega Ruby",
     "Pokémon Omega Ruby e Alpha Sapphire são remakes de Ruby e Sapphire, com gráficos em 3D e novas mecânicas, como as Mega Evoluções.",
     "assets/images/pokemon_omega_ruby_alpha_sapphire.png",
     "Esses remakes trouxeram de volta a região Hoenn com novos gráficos e várias melhorias, mantendo a essência dos originais.",
