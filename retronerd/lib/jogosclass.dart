@@ -48,9 +48,8 @@ List<Videogames> consoles = [
   Videogames('Sega Dreamcast', 'O Sega Dreamcast foi pioneiro em trazer a experiência de jogo online e apresentou títulos revolucionários como Shenmue, Crazy Taxi e Phantasy Star Online.')
 ];
 
-List<Games> games = [
-  // PlayStation 1 (PS1)
-  Games(
+List<Games> gamesps1 = [
+   Games(
     "Metal Gear Solid",
     "Metal Gear Solid é um clássico jogo de ação e espionagem. O jogador assume o papel de Solid Snake e deve evitar o uso de armas nucleares por terroristas, explorando ambientes complexos e utilizando furtividade.",
     "assets/images/metal_gear_solid.png",
@@ -129,9 +128,11 @@ List<Games> games = [
     "Este jogo revolucionou os simuladores de corrida, trazendo um realismo sem precedentes e se tornando um dos maiores sucessos da PlayStation.",
     "Polyphony Digital",
     "PlayStation 1"
-  ),
-    // PlayStation 2 (PS2)
-  Games(
+  )
+];
+
+List<Games> gamesps2 = [
+ Games(
     "GTA: San Andreas",
     "GTA: San Andreas é um dos maiores sucessos da franquia Grand Theft Auto. O jogo segue Carl 'CJ' Johnson enquanto ele retorna à sua cidade natal, Los Santos, e se envolve em uma série de missões envolvendo gangues, crime e corrupção.",
     "assets/images/gta_san_andreas.png",
@@ -211,8 +212,10 @@ List<Games> games = [
     "EA Games",
     "PlayStation 2"
   ), 
-   // PlayStation Portable (PSP)
-  Games(
+];
+
+List<Games> gamespsp = [
+   Games(
     "God of War: Chains of Olympus",
     "God of War: Chains of Olympus é um jogo de ação e aventura que segue o personagem Kratos, enquanto ele enfrenta deuses e criaturas mitológicas. O jogo é conhecido pela sua ação brutal e puzzles desafiadores.",
     "assets/images/god_of_war_chains_of_olympus.png",
@@ -292,9 +295,11 @@ List<Games> games = [
     "Square Enix",
     "PSP"
   ),
-  // NINTENDO
-    // Nintendinho (NES)
-  Games(
+];
+
+
+List<Games> gamesNintendinho = [
+Games(
     "Super Mario Bros",
     "Super Mario Bros é um dos jogos mais icônicos de todos os tempos. Mario deve resgatar a Princesa Peach do vilão Bowser, explorando mundos cheios de inimigos e obstáculos.",
     "assets/images/super_mario_bros.png",
@@ -342,7 +347,9 @@ List<Games> games = [
     "Tecmo",
     "Nintendinho"
   ),
-   // Super Nintendo Entertainment System (SNES)
+];
+
+List<Games> gamesSuperNintendo = [
   Games(
     "Super Mario World",
     "Super Mario World é um clássico absoluto que acompanha Mario e Luigi em sua jornada pela Ilha dos Dinossauros para resgatar a Princesa Peach. Com gráficos coloridos, uma trilha sonora cativante e a introdução do icônico Yoshi, o jogo definiu os padrões dos jogos de plataforma no SNES.",
@@ -423,8 +430,10 @@ List<Games> games = [
     "Nintendo",
     "Super Nintendo Entertainment System (SNES)"
   ),
-    // Nintendo 64
-  Games(
+];
+
+List<Games> gamesn64 = [
+    Games(
     "Super Mario 64",
     "Super Mario 64 é um dos primeiros jogos 3D de plataforma, onde Mario deve explorar o castelo de Peach e coletar estrelas para derrotar Bowser. Com gráficos inovadores e jogabilidade imersiva, é um marco na história dos videogames.",
     "assets/images/super_mario_64.png",
@@ -504,8 +513,11 @@ List<Games> games = [
     "Rare",
     "Nintendo 64"
   ),
-    // Nintendo DS
-  Games(
+];
+
+
+List<Games> gamesDS = [
+ Games(
     "Mario Kart DS",
     "Mario Kart DS é um dos melhores jogos de corrida do Nintendo DS, trazendo os personagens do universo Mario em pistas emocionantes e a opção de multiplayer via Wi-Fi.",
     "assets/images/mario_kart_ds.png",
@@ -649,6 +661,11 @@ List<Games> games = [
     "Mistwalker",
     "Nintendo Wii"
   ),
+
+  
+];
+
+List<Games> games3ds = [
     // Nintendo 3DS
   Games(
     "Animal Crossing: New Leaf",
@@ -722,8 +739,10 @@ List<Games> games = [
     "Nintendo",
     "Nintendo 3DS"
   ),
-  // Sega Master System
-  Games(
+];
+
+List<Games> gamesMasterSystem = [
+   Games(
     "Sonic the Hedgehog",
     "Sonic the Hedgehog é um dos jogos mais icônicos da Sega, onde Sonic corre através de níveis desafiadores para derrotar Dr. Robotnik e salvar seus amigos.",
     "assets/images/sonic_the_hedgehog_master_system.png",
@@ -779,8 +798,12 @@ List<Games> games = [
     "Sega",
     "Sega Master System"
   ),
-   // Sega Mega Drive
-  Games(
+
+];
+
+
+List<Games> gamesMegaDrive = [
+    Games(
     "Sonic the Hedgehog",
     "Sonic the Hedgehog para Mega Drive trouxe a série para uma nova era com gráficos coloridos, velocidade impressionante e níveis desafiadores.",
     "assets/images/sonic_the_hedgehog_mega_drive.png",
@@ -852,8 +875,12 @@ List<Games> games = [
     "Sega",
     "Sega Mega Drive"
   ), 
-  // Sega Saturn
-  Games(
+];
+
+
+
+List<Games> gamesSaturn = [
+Games(
     "Nights into Dreams",
     "Nights into Dreams é um jogo de ação e exploração com um estilo visual impressionante e uma jogabilidade única, onde o jogador voa por cenários oníricos.",
     "assets/images/nights_into_dreams.png",
@@ -909,7 +936,10 @@ List<Games> games = [
     "Sega",
     "Sega Saturn"
   ),
-  // Sega Dreamcast
+
+];
+
+List<Games> gamesDreamcast = [
   Games(
     "Shenmue",
     "Shenmue é um RPG de ação em mundo aberto que segue Ryo Hazuki em busca de vingança após a morte de seu pai. Famoso por sua narrativa envolvente e gráficos inovadores.",
