@@ -14,8 +14,9 @@ class Games {
 class Produtoras {
   final String nome;
   final String desc;
+  final String Image;
 
-  Produtoras(this.nome, this.desc);
+  Produtoras(this.nome, this.desc, this.Image);
 }
 
 class Videogames {
@@ -26,9 +27,9 @@ class Videogames {
 }
 
 List<Produtoras> produtoras = [
-  Produtoras('PlayStation', 'PlayStation é uma das marcas mais icônicas no mundo dos videogames. Desde seu lançamento, revolucionou o mercado com consoles poderosos, experiências gráficas impressionantes e uma biblioteca vasta de jogos que moldaram gerações de jogadores.'),
-  Produtoras('Nintendo', 'Nintendo é sinônimo de inovação e diversão no mundo dos games. Criadora de algumas das franquias mais amadas, como Mario, Zelda e Pokémon, a empresa combina tecnologia única com experiências de jogo memoráveis.'),
-  Produtoras('Sega', 'Sega é uma produtora histórica que marcou os anos 80 e 90 com consoles revolucionários e franquias inesquecíveis como Sonic the Hedgehog. É lembrada como uma pioneira na indústria de jogos.')
+  Produtoras('PlayStation', 'PlayStation é uma das marcas mais icônicas no mundo dos videogames. Desde seu lançamento, revolucionou o mercado com consoles poderosos, experiências gráficas impressionantes e uma biblioteca vasta de jogos que moldaram gerações de jogadores.', 'assets2/produtoras/ps.png'),
+  Produtoras('Nintendo', 'Nintendo é sinônimo de inovação e diversão no mundo dos games. Criadora de algumas das franquias mais amadas, como Mario, Zelda e Pokémon, a empresa combina tecnologia única com experiências de jogo memoráveis.', 'assets2/produtoras/SEGA.png'),
+  Produtoras('Sega', 'Sega é uma produtora histórica que marcou os anos 80 e 90 com consoles revolucionários e franquias inesquecíveis como Sonic the Hedgehog. É lembrada como uma pioneira na indústria de jogos.', 'assets2/produtoras/ps.png')
 ];
 
 List<Videogames> consoles = [
