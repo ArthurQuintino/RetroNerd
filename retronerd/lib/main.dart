@@ -8,6 +8,8 @@ import 'tamagotchi.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:retronerd/eventos.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:retronerd/tamagotchi.dart';
 
 void main() {
   runApp(const MainApp());
@@ -130,6 +132,7 @@ class _MainAppState extends State<MainApp> {
                 ArtigosPage(),
                 Jogospage(),
                 EventosPage(),
+                TamagotchiPage()
               ],
             )));
   }

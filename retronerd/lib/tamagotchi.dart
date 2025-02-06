@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void TamagotchiPage() {
-  runApp(const tamagotchiPage());
+void tamagotchiPage() {
+  runApp(const TamagotchiPage());
 }
 
-class tamagotchiPage extends StatelessWidget {
-  const tamagotchiPage({super.key});
+class TamagotchiPage extends StatelessWidget {
+  const TamagotchiPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold();
