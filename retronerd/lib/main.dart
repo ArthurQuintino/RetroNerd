@@ -125,11 +125,11 @@ class _MainAppState extends State<MainApp> {
             ),
             body: IndexedStack(
               index: currentIndex,
-              children:  <Widget>[
+              children: <Widget>[
                 Home(),
                 ArtigosPage(),
-                EventosPage(),
                 Jogospage(),
+                EventosPage(),
               ],
             )));
   }

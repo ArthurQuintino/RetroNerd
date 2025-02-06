@@ -11,7 +11,7 @@ void main() {
 
 class Home extends StatefulWidget {
   const Home({super.key});
-   @override
+  @override
   State<Home> createState() => _Home();
 }
 
@@ -82,26 +82,25 @@ class _Home extends State<Home> {
                                     elevation: 3,
                                     color: Colors.transparent,
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20),
-                                      side: const BorderSide(
-                                        color: Color(0xFF4DA6FF),
-                                        width: 3
-                                      )
-                                    ),
+                                        borderRadius: BorderRadius.circular(20),
+                                        side: const BorderSide(
+                                            color: Color(0xFF4DA6FF),
+                                            width: 3)),
                                     child: ListTile(
-                                      onTap: () => Navigator.push(
-                                          context,
-                                          MaterialPageRoute(builder: (context) => const Description(),
-                                          settings: RouteSettings(
-                                            arguments: noticias[index]
-                                          ))
-                                      ),
+                                        onTap: () => Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const Description(),
+                                                settings: RouteSettings(
+                                                    arguments:
+                                                        noticias[index]))),
                                         title: Text(
-                                      noticias[index].Descricao,
-                                      
-                                      style: GoogleFonts.rethinkSans(
-                                          color: Colors.white, fontSize: 17),
-                                    )));
+                                          noticias[index].Descricao,
+                                          style: GoogleFonts.rethinkSans(
+                                              color: Colors.white,
+                                              fontSize: 17),
+                                        )));
                               })),
                     )
                   ],

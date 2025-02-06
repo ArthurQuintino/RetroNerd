@@ -75,7 +75,11 @@ class Description2 extends StatelessWidget {
                       color: Colors.white, fontSize: 25),
                 ),
                 const Gap(40),
-                Image.asset(produtoras.Image, width: largura - 100, height: 100,),
+                Image.asset(
+                  produtoras.Image,
+                  width: largura - 100,
+                  height: 100,
+                ),
                 const Gap(20)
               ],
             )),
@@ -105,27 +109,26 @@ class Description2 extends StatelessWidget {
                     ],
                   ))),
           const Gap(20),
-                        Container(
-                  width: largura - 40,
-                  height: 300,
-                  decoration: BoxDecoration(
-                      color: Color(0XFF0D0D12),
-                      borderRadius: BorderRadius.circular(20)),
-                  child: ListView.builder(
-                    itemCount: games.length,
-                    scrollDirection: Axis.horizontal,
-                    shrinkWrap: true,
-                    physics: const BouncingScrollPhysics(),
-                    itemBuilder: (BuildContext ctx, index) {
-                      if(produtoras.nome ==  'Playstation'){
-                        if (games[index].nome == 'Playstation 1' || games[index].nome == 'Playstation 2' || games[index].nome == 'Playstation Portable'){
-
-                          
-                        }
-                        return Padding(
+          Container(
+              width: largura - 40,
+              height: 300,
+              decoration: BoxDecoration(
+                  color: Color(0XFF0D0D12),
+                  borderRadius: BorderRadius.circular(20)),
+              child: ListView.builder(
+                itemCount: games.length,
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                physics: const BouncingScrollPhysics(),
+                itemBuilder: (BuildContext ctx, index) {
+                  if (produtoras.nome == 'Playstation') {
+                    if (games[index].nome == 'Playstation 1' ||
+                        games[index].nome == 'Playstation 2' ||
+                        games[index].nome == 'Playstation Portable') {}
+                    return Padding(
                         padding: EdgeInsets.all(20),
-                         child: ClipOval(
-                             /*child: GestureDetector(
+                        child: ClipOval(
+                          /*child: GestureDetector(
                               onTap: () => Navigator.push(
                                 context, 
                                 MaterialPageRoute(builder: (context) => const Description2(),
@@ -143,9 +146,9 @@ class Description2 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(30)),
                           ),
                         ));
-                      }
-                    },
-                  ))
+                  }
+                },
+              ))
         ]),
       ),
     );

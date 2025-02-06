@@ -26,7 +26,7 @@ List<Noticias> noticias = [
     'Desafios do Mercado de Games no Brasil',
     'Apesar do crescimento do mercado de games no Brasil, muitos desafios ainda impedem o avanço do setor. Entre eles estão a alta carga tributária sobre produtos eletrônicos, a falta de apoio governamental aos desenvolvedores independentes e a infraestrutura tecnológica desigual entre as regiões. Especialistas acreditam que investimentos estratégicos e políticas públicas podem transformar o Brasil em uma potência global no mercado de games.',
   ),
-   Noticias(
+  Noticias(
     'Inteligência artificial está revolucionando o desenvolvimento de jogos',
     'Estúdios ao redor do mundo estão adotando inteligência artificial para acelerar o desenvolvimento de jogos. Ferramentas de IA são usadas para criar mundos mais realistas, gerar personagens não jogáveis com comportamentos complexos e até prever padrões de jogo para melhorar a experiência dos usuários. Essa tecnologia promete transformar a indústria como nunca antes.',
   ),
@@ -46,5 +46,4 @@ List<Noticias> noticias = [
     'Nova tendência: jogos que ajudam no aprendizado de programação',
     'Jogos educativos focados no aprendizado de programação estão ganhando popularidade. Plataformas interativas permitem que crianças e adultos aprendam a codificar enquanto se divertem, usando desafios baseados em lógica e criatividade. Esse mercado crescente está ajudando a formar a próxima geração de desenvolvedores.',
   ),
-
 ];

@@ -44,13 +44,12 @@ class Jogospage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         child: ClipOval(
                             child: GestureDetector(
-                              onTap: () => Navigator.push(
-                                context, 
-                                MaterialPageRoute(builder: (context) => const Description2(),
-                                settings: RouteSettings(
-                                  arguments: produtoras[index]
-                                ))
-                              ),
+                          onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Description2(),
+                                  settings: RouteSettings(
+                                      arguments: produtoras[index]))),
                           child: Container(
                             width: 280,
                             decoration: BoxDecoration(

@@ -43,18 +43,18 @@ class ArtigosPage extends StatelessWidget {
                                     side: const BorderSide(
                                         color: Color(0xFF4DA6FF), width: 3)),
                                 child: ListTile(
-                                     onTap: () => Navigator.push(
-                                      context,
-                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
-                                      settings: RouteSettings(
-                                      arguments: artigos[index]
-                                      ))
-                                      ),
+                                    onTap: () => Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const ArtigosDescription(),
+                                            settings: RouteSettings(
+                                                arguments: artigos[index]))),
                                     title: Text(
-                                  artigos[index].nomeArtigo,
-                                  style: GoogleFonts.rethinkSans(
-                                      color: Colors.white, fontSize: 17),
-                                )));
+                                      artigos[index].nomeArtigo,
+                                      style: GoogleFonts.rethinkSans(
+                                          color: Colors.white, fontSize: 17),
+                                    )));
                           })),
                 ),
                 Gap(40),
@@ -81,18 +81,18 @@ class ArtigosPage extends StatelessWidget {
                                     side: const BorderSide(
                                         color: Color(0xFF4DA6FF), width: 3)),
                                 child: ListTile(
-                                     onTap: () => Navigator.push(
-                                      context,
-                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
-                                      settings: RouteSettings(
-                                      arguments: teoria[index]
-                                      ))
-                                      ),
+                                    onTap: () => Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const ArtigosDescription(),
+                                            settings: RouteSettings(
+                                                arguments: teoria[index]))),
                                     title: Text(
-                                  teoria[index].nomeArtigo,
-                                  style: GoogleFonts.rethinkSans(
-                                      color: Colors.white, fontSize: 17),
-                                )));
+                                      teoria[index].nomeArtigo,
+                                      style: GoogleFonts.rethinkSans(
+                                          color: Colors.white, fontSize: 17),
+                                    )));
                           })),
                 ),
                 Gap(40),
@@ -122,11 +122,11 @@ class ArtigosPage extends StatelessWidget {
                                 child: ListTile(
                                   onTap: () => Navigator.push(
                                       context,
-                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
-                                      settings: RouteSettings(
-                                      arguments: misterios[index]
-                                      ))
-                                      ),
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const ArtigosDescription(),
+                                          settings: RouteSettings(
+                                              arguments: misterios[index]))),
                                   title: Text(
                                     misterios[index].nomeArtigo,
                                     style: GoogleFonts.rethinkSans(
@@ -145,13 +145,15 @@ class ArtigosPage extends StatelessWidget {
                                 child: ListTile(
                                   onTap: () => Navigator.push(
                                       context,
-                                      MaterialPageRoute(builder: (context) => const ArtigosDescription(),
-                                      settings: RouteSettings(
-                                      arguments: easterEggs[index - misterios.length]
-                                      ))
-                                      ),
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const ArtigosDescription(),
+                                          settings: RouteSettings(
+                                              arguments: easterEggs[
+                                                  index - misterios.length]))),
                                   title: Text(
-                                    easterEggs[index - misterios.length].nomeArtigo,
+                                    easterEggs[index - misterios.length]
+                                        .nomeArtigo,
                                     style: GoogleFonts.rethinkSans(
                                         color: Colors.white, fontSize: 17),
                                   ),
